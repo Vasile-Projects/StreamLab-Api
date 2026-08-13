@@ -15,12 +15,12 @@ import java.util.List;
 public class CorsConfig {
 
     @Value("${cors.allowed-origin}")
-    private String allowedOrigin;
+    private List<String> allowedOrigins;
 
     @Bean
     public FilterRegistrationBean<CorsFilter> corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of(allowedOrigin));
+        config.setAllowedOrigins(allowedOrigins);
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true);
