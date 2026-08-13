@@ -52,7 +52,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
         // endpoint pubblico: nessun controllo, si passa direttamente al controller
 
-        if (PATH_PUBBLICI.contains(path) || path.startsWith("/swagger-ui") || path.startsWith("/v3/api-docs")) {
+        if (PATH_PUBBLICI.contains(path) || path.startsWith("/swagger-ui") || path.startsWith("/v3/api-docs") || path.startsWith("/api/tmdb")) {
             filterChain.doFilter(request, response);
             return;
         }
