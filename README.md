@@ -22,16 +22,18 @@ Primo progetto Spring Boot sviluppato da zero, un pezzo alla volta, con particol
 
 ## Struttura del progetto
 
+```
 src/main/java/it/labforweb/streamlabapi/
-├── controllers/ # endpoint REST
-├── services/ # logica di business
-├── repositories/ # accesso ai dati (Spring Data JPA)
-├── models/ # entity JPA
-├── dtos/ # oggetti di richiesta/risposta
-├── exceptions/ # eccezioni custom + gestore globale
-├── security/ # JWT, filtro di autenticazione
-├── utils/ # classi di supporto interne
-└── config/ # bean di configurazione (CORS, PasswordEncoder, OpenAPI)
+├── controllers/    # endpoint REST
+├── services/       # logica di business
+├── repositories/   # accesso ai dati (Spring Data JPA)
+├── models/         # entity JPA
+├── dtos/           # oggetti di richiesta/risposta
+├── exceptions/     # eccezioni custom + gestore globale
+├── security/       # JWT, filtro di autenticazione
+├── utils/          # classi di supporto interne
+└── config/         # bean di configurazione (CORS, PasswordEncoder, OpenAPI)
+```
 
 
 ## Funzionalità principali
